@@ -3,40 +3,106 @@
 <head>
     <title>Your Name</title>
     <style>
-        /* Navigation bar styling */
-        .navbar {
-            background-color: #333;
-            overflow: hidden;
-            padding: 14px 16px;
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
-        
-        .navbar a {
+
+        /* Navigation bar */
+        .nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px;
+            text-align: right;
+            background: transparent;
+        }
+
+        .nav a {
             color: white;
             text-decoration: none;
-            padding: 14px 16px;
-            font-size: 17px;
+            margin: 0 15px;
+            padding: 5px 10px;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
-        
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
+
+        .nav a:hover {
+            color: #ffd700;
+        }
+
+        /* Hero section */
+        .hero {
+            height: 100vh;
+            background: url('path-to-your-space-background.jpg') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: #ffd700;
+        }
+
+        /* Social icons */
+        .social-icons {
+            margin-top: 30px;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+
+        /* Scroll down button */
+        .scroll-down {
+            position: absolute;
+            bottom: 30px;
+            color: white;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="publications.html">Publications</a>
-        <a href="contact.html">Contact</a>
+    <!-- Navigation -->
+    <div class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#more">More</a>
     </div>
-    
-    <!-- Main Content -->
-    <div class="content">
-        <h1>Welcome to My Website</h1>
-        <!-- Your content here -->
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>I'm Your Name</h1>
+        <p>Your tagline or brief description here</p>
+        
+        <!-- Social Icons -->
+        <div class="social-icons">
+            <a href="https://github.com/yourusername"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourusername"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/yourusername"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <!-- Scroll Down Button -->
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
     </div>
-    <img src="./images/aging_theme.png" alt="aging">
+     <img src="./images/aging_theme.png" alt="aging">
 </body>
 </html>
