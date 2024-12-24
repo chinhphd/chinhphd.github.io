@@ -99,6 +99,7 @@
             margin-bottom: 30px;
             color: #333;
         }
+        
         .bio {
             font-size: 1.2em;
             line-height: 1.6;
@@ -140,10 +141,13 @@
         }
 
         .education-item h3 {
-            font-size: 1.8em;
-            color: #333;
-            margin-bottom: 10px;
-        }
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+    white-space: nowrap;  /* Add this line to prevent wrapping */
+    overflow: hidden;     /* Add this to handle overflow */
+    text-overflow: ellipsis; /* Add this to show ... if text is too long */
+}
 
         .education-item .degree {
             font-size: 1.2em;
