@@ -111,6 +111,57 @@
             color: #666;
             margin-bottom: 30px;
         }
+        /* Add Education section styles right HERE */
+        .education-section {
+            padding: 80px 20px;
+            background-color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .education-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .education-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            color: #333;
+        }
+
+        .education-item {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f8f8f8;
+        }
+
+        .education-item h3 {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .education-item .degree {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .education-item .year {
+            font-size: 1.1em;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        .education-item .description {
+            font-size: 1.1em;
+            color: #666;
+            line-height: 1.5;
+        }
     </style>
 </head>
 <body>
@@ -124,7 +175,7 @@
     </div>
 
     <!-- Hero Section -->
-    <div class="hero"> id="home">
+    <div class="hero"> 
         <h1>I'm Chinh (Chris) Doan</h1>
         <p></p>
         
@@ -154,6 +205,20 @@
             <p class="details">
                 Previously, I worked at Stanford University for one year, studying cardiovascular diseases.
             </p>
+        </div>
+    </section>
+    <!-- Add the Education Section HERE -->
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="education-content">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Boston University</h3>
+                <p class="degree">Ph.D. in Bioinformatics</p>
+                <p class="year">2022 - Present</p>
+                <p class="description">Focus on aging and Alzheimer's research</p>
+            </div>
+            <!-- Add more education items as needed -->
         </div>
     </section>
 </body>
